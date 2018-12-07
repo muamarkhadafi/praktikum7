@@ -121,12 +121,12 @@ main()
 #include
 #include
 void balik(char *k){
-if(*k!=”){
+if(*k!=â€){
 balik(&k[1]);
 cout<
 }
 }main(){
-char *kata=”....”;--> //untuk masukan kata
+char *kata=â€....â€;--> //untuk masukan kata
 balik(kata);
 cout<
 return 0;
@@ -152,4 +152,4 @@ int main()
 }
 ```
 **Hasil**
-![hasil]()
+![hasil](https://raw.githubusercontent.com/muamarkhadafi/praktikum7/master/soal3.png)
