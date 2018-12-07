@@ -1,16 +1,15 @@
 # praktikum7
 
 
-
 ##soal1.cpp
 **Alur Argoritma**
 1. Mulai program tersebut 
 2. input interger fungsi (int, int)
 4. input interger a dan b dan deskripsikan a=0, dan b=1.
-6. jika nilai suku satu (b) adalah =1 dan jika nilai suku dua (a) adalah =0.
-7. maka cetak rumus fungsi iteratif menggunakan for intruksikan fungsi fibionici di awali dengan 2 dan di akhiri dengan indexs suku
-8. deskripsikan variable untuk mencetak fuungsi selanjutnya.
-9. cetak suku fibionici menggunakan pemanggilan fungsi itertif.
+5. jika nilai suku satu (b) adalah =1 dan jika nilai suku dua (a) adalah =0.
+6. maka cetak rumus fungsi iteratif menggunakan for intruksikan fungsi fibionici di awali dengan 2 dan di akhiri dengan indexs suku
+7. deskripsikan variable untuk mencetak fuungsi selanjutnya.
+8. cetak suku fibionici menggunakan pemanggilan fungsi itertif.
 
 **Pseudecode**
 1. int typedatar (a, b)
@@ -61,8 +60,6 @@ return 0;
 
 ##Soal2.cpp
 
-**Alur Algoritma**
-##soal1.cpp
 **Alur Argoritma**
 1. Mulai program tersebut 
 2. input interger fungsi (int a, intb).
@@ -70,7 +67,7 @@ return 0;
 4. jika nilai (b>0) intruksikan return a + type data (a, b - 1).
 5. Sebaliknya return (-a) + type Data (a, b+1)
 6. masukan variabel a,b untuk menginput nilai awal dan dibagi degan nilai selanjutny.
-7. cetak nilai perkaian dengan memanggil funsi rekrusif menggunkan type datany.
+7. cetak nilai perkalian dengan memanggil funsi rekrusif menggunkan type datany.
 
 **Pseudecode**
 ```
@@ -112,10 +109,47 @@ main()
 ![Hasil](https://raw.githubusercontent.com/Amirul29/praktikum7/master/soal2.png)
 
 ##soal3.cpp
+**Alur Argoritma**
+1. Mulai program tersebut 
+2. input menggunakan initruksi void dan menggunakan pointer untuk menetapakan void typedata (char *s)
+3. jika nilai **s!=0**--> menggunakan Pointer(*) maka masukan intruksi membalik (&s[1])
+4. masuan char untuk intruksi kata yang ingin kita ubah dan intruksi balik
+5. cetak pemblikan kata dengan memanggil funsi rekrusif menggunkan type datany.
 
-**Alur Algoritma**
-# praktikum7
-# praktikum7
-# praktikum7
-# praktikum7
-# praktikum7
+**Pseudecoede**
+```
+#include
+#include
+void balik(char *k){
+if(*k!=”){
+balik(&k[1]);
+cout<
+}
+}main(){
+char *kata=”....”;--> //untuk masukan kata
+balik(kata);
+cout<
+return 0;
+```
+**CODE PROGRAM**
+```
+#include<iostream>
+#include<string.h>
+
+using namespace std;
+void balik(char *s)
+{ if (*s != '\0'){
+balik(&s[1]);
+cout << s[0];
+}
+}
+int main()
+{
+      char* kata = (char*) "amar";
+    balik(kata); cout << endl;
+    return 0;
+
+}
+```
+**Hasil**
+![hasil]()
